@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <title>DevCraft Botpic Generator</title>
+  <style>
+    body {
+      background: #0f172a;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .avatar-card {
+      width: 512px;
+      height: 512px;
+      background: linear-gradient(135deg, #0d1117 0%, #161b22 100%);
+      border-radius: 50%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 0 0 50px rgba(0, 229, 255, 0.3);
+      border: 8px solid #1f293d;
+      position: relative;
+      overflow: hidden;
+    }
+    .glow-bg {
+      position: absolute;
+      width: 300px;
+      height: 300px;
+      background: radial-gradient(circle, rgba(0,229,255,0.15) 0%, rgba(0,0,0,0) 70%);
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    .icon {
+      font-size: 110px;
+      margin-bottom: 10px;
+      filter: drop-shadow(0 0 15px #00e5ff);
+      z-index: 2;
+    }
+    .title {
+      color: #ffffff;
+      font-size: 42px;
+      font-weight: 800;
+      letter-spacing: 2px;
+      z-index: 2;
+      text-shadow: 0 0 10px rgba(255,255,255,0.5);
+    }
+    .title span {
+      color: #00e5ff;
+    }
+    .subtitle {
+      color: #94a3b8;
+      font-size: 20px;
+      font-weight: 600;
+      letter-spacing: 4px;
+      margin-top: 5px;
+      z-index: 2;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="avatar-card">
+    <div class="glow-bg"></div>
+    <div class="icon">⚡</div>
+    <div class="title">DEV<span>CRAFT</span></div>
+    <div class="subtitle">BOT STUDIO</div>
+  </div>
+
+</body>
+</html>
